@@ -203,9 +203,11 @@ function initRouter_FansBadgeList() {
 }
 
 function initRouter_AllPage() {
+  autoDark_fast();
   setTimeout(() => {
     initStyles();
     removeAD();
+    initPkg_autoDark_hook()
     // initPkg_Dark();
     initPkg_DailyAuto();
   }, 1500);

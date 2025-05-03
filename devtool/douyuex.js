@@ -4615,6 +4615,34 @@ function delLocalDanmakuCollect(id) {
   let ret = getLocalDanmakuCollect();
   localStorage.setItem("ExSave_DanmakuCollect", JSON.stringify(ret.filter(item => item.id !== id)));
 }
+function initPkg_autoDark_hook() {
+    // 监听系统深色模式变化
+    var darkMatchList = matchMedia("(prefers-color-scheme: dark)");
+    const check = (ifSysDark) => {
+        let ifCurDark = currentMode === 1;
+        if (ifCurDark != ifSysDark) {
+            //todo by function
+            document.getElementById("ex-night").click();
+        }
+    };
+    check(darkMatchList.matches);
+    darkMatchList.addEventListener("change", (event) => {
+        check(event.matches);
+    });
+}
+function autoDark_fast() {
+    const ifSystemDarkMode = () => {
+        // 获取系统深色模式
+        var darkMatchList = matchMedia("(prefers-color-scheme: dark)");
+        return darkMatchList.matches;
+    }
+
+    currentMode = ifSystemDarkMode() ? 1 : 0;
+    saveData_Mode()
+}
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------
 // const autoDARK = true;
 // function initPkg_AutoDark() {
 //   if (autoDARK) {
@@ -16803,9 +16831,11 @@ function initRouter_FansBadgeList() {
 }
 
 function initRouter_AllPage() {
+  autoDark_fast();
   setTimeout(() => {
     initStyles();
     removeAD();
+    initPkg_autoDark_hook()
     // initPkg_Dark();
     initPkg_DailyAuto();
   }, 1500);
