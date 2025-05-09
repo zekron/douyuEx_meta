@@ -1,4 +1,5 @@
 function initPkg_ExpandTool_TabSwitch() {
+  enableIgnoreAutoPause();
   ExpandTool_TabSwitch_insertDom();
   ExpandTool_TabSwitch_insertFunc();
   initPkg_ExpandTool_TabSwitch_Set();
@@ -7,7 +8,7 @@ function initPkg_ExpandTool_TabSwitch() {
 function ExpandTool_TabSwitch_insertDom() {
   let a = document.createElement("span");
   // a.className = "extool__bsize";
-  a.innerHTML = '<label title="阻止页面后台挂机检测"><input style="margin-top:5px;" id="extool__tabSwitch" type="checkbox">页面防挂机</label>';
+  a.innerHTML = '<label title="阻止浏览器页签冻结"><input style="margin-top:5px;" id="extool__tabSwitch" type="checkbox">防页签冻结</label>';
   
   let b = document.getElementsByClassName("extool")[0];
   b.insertBefore(a, b.childNodes[0]);
@@ -56,4 +57,9 @@ function enableTabSwitch() {
   document.addEventListener('visibilitychange', function(e) {
       e.stopImmediatePropagation();
   }, true, true);
+}
+
+function enableIgnoreAutoPause() {
+  // 防止直播自动暂停
+  localStorage.setItem("freetimed", "1");
 }
