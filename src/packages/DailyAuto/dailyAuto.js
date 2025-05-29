@@ -1,5 +1,5 @@
 const lastTime = "Ex_DailyAuto_LastTime";
-const restRid = "52";
+const restRid = "12306";
 function initPkg_DailyAuto() {
   // <i class="Backpack-newPropTip">获得新道具</i>
   setTimeout(() => {

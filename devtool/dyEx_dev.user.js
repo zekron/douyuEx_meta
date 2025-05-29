@@ -55,6 +55,7 @@ function initPkg_Timer() {
     // initPkg_FishPond_Timer();
     initPkg_DisableCloseJump_Timer();
     initPkg_LevelTask_Timer();
+    initPkg_Sign_OPFOY_Timer();
 }
 
 function initTimer() {
@@ -779,320 +780,6 @@ function initStyles() {
     top: 3px;
     cursor: pointer;
     margin-left: 3px;
-}#ex-point {
-    cursor: pointer;
-    float: left;
-    line-height: 30px;
-
-    -moz-user-select:none; /*火狐*/
-    -webkit-user-select:none; /*webkit浏览器*/
-    -ms-user-select:none; /*IE10*/
-    -khtml-user-select:none; /*早期浏览器*/
-    user-select:none;
-}
-#point__value {
-    color: #333;
-}#ex-exchange {
-    position: absolute;
-    left: 0;
-    bottom: 37px;
-    z-index: 100;
-}
-.exchange__panel {
-    width: 400px;
-    height: 500px;
-    position: relative;
-}
-
-.exchange__wrap {
-    width: 400px;
-    height: 500px;
-    background-color: white;
-    border-radius: 3%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    box-shadow: 0px 0px 20px 0px #888888;
-}
-.exchange__wrap::-webkit-scrollbar {
-    display:none
-}
-
-.exchange__close {
-    position: absolute;
-    color: rgb(127, 127, 137);
-    right: 10px;
-    top: 5px;
-    font-size: 15px;
-    cursor: pointer;
-    z-index: 101;
-}
-
-.item__wrap {
-    width: 100%;
-    height: 130px;
-    border-bottom: 1px solid rgba(121,127,137,0.4);
-    position: relative;
-}
-.item__pic {
-    left: 10px;
-    top: 10px;
-    position: absolute;
-    height: 110px;
-    width: 110px;
-}
-
-.item__name {
-    position: absolute;
-    top: 7px;
-    left: 130px;
-    color: #353536;;
-    font-size: 15px;
-    margin-right: 10px;
-}
-.item__description {
-    position: absolute;
-    top: 32px;
-    left: 130px;
-    font-size: 12px;
-    margin-right: 10px;
-    color: #969799;
-}
-.item__num {
-    position: absolute;
-    bottom: 27px;
-    left: 130px;
-    font-size: 12px;
-    color: #969799;
-}
-
-.item__price {
-    position: absolute;
-    bottom: 7px;
-    left: 130px;
-    font-size: 14px;
-    color: rgb(255,93,35);
-    font-weight: 600;
-}
-
-.item__exchange {
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    width: 80px;
-    height: 25px;
-    
-    background-color: rgb(255,93,35);
-    border-radius: 999px;
-    cursor: pointer;
-}#ex-pointlist {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    background-color: white;
-    border-radius: 3%;
-    overflow: auto;
-    z-index: 100;
-    bottom: 37px;
-}
-#ex-pointlist::-webkit-scrollbar {
-    display:none
-}
-.pointlist__wrap {
-    width: 100%;
-    height: 100%;
-    margin: 15px 0;
-    position: absolute;
-}
-.pointlist__close {
-    position: absolute;
-    color: rgb(127, 127, 137);
-    right: 7px;
-    font-size: 15px;
-    cursor: pointer;
-}
-.pointlist__wrap table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.pointlist__wrap td,
-.pointlist__wrap th {
-    border: 1px solid #cad9ea;
-    color: #666;
-    height: 30px;
-    width: 85px;
-}
-
-.pointlist__wrap thead th {
-    background-color: #CCE8EB;
-    width: 100px;
-}
-
-.pointlist__wrap tr:nth-child(odd) {
-    background: #fff;
-}
-
-.pointlist__wrap tr:nth-child(even) {
-    background: #F5FAFA;
-}.point__panel {
-    position: absolute;
-    left: 0px;
-    bottom: 37px;
-    display: none;
-    animation: move-in 0.75s;
-    z-index: 101;
-}
-@keyframes move-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0.95;
-    }
-}
-
-.panel__wrap {
-    overflow: hidden;
-    background-color: white;
-    border-radius: 5%;
-    width: 120px;
-    box-shadow: 0px 2px 20px 0px #888888;
-    font-size: 14px;
-}
-
-.panel__cell {
-    width: 100%;
-    height: 37px;
-    line-height: 37px;
-    border-bottom: 1px solid rgba(121,127,137,0.4);
-    text-align: center;
-    cursor: pointer;
-}
-
-.panel__cell:hover {
-    background-color: rgb(217, 217, 217);
-    transition: 0.75s;
-}
-
-.panel__triangle {
-    width: 0px;
-    height: 0px;
-    border-color: white transparent transparent transparent;
-    border-style: solid;
-    border-width: 10px;
-    position: absolute;
-    left: 35px;
-}#ex-record {
-    width: 300px;
-    height: 400px;
-    position: absolute;
-    bottom: 67px;
-    z-index: 100;
-}
-.record__close {
-    position: absolute;
-    color: rgb(127, 127, 137);
-    right: -20px;
-    font-size: 15px;
-    cursor: pointer;
-}
-.records__wrap {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border-radius: 3%;
-    box-shadow: 0px 0px 20px 0px #888888;
-    padding: 15px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-.records__wrap::-webkit-scrollbar {
-    display:none
-}
-
-.record__wrap {
-    height: 50px;
-    width: 100%;
-    border: 1px solid rgba(121,127,137,0.4);
-    margin-bottom: 10px;
-    display: -webkit-box;
-    display: -moz-box; 
-    display: -ms-flexbox;
-    display: -webkit-flex; 
-    display: flex; 
-    transition: 0.75s;
-    cursor: pointer;
-}
-
-.record__wrap:hover {
-    background-color: #e9f5ff;
-}
-
-.record__left {
-    flex: 1;
-    position: relative;
-}
-.record__name {
-    position: absolute;
-    flex: 1;
-    color: #353536;;
-    font-size: 15px;
-    top: 2px;
-    margin-left: 5px;
-}
-.record__updatetime {
-    position: absolute;
-    margin-left: 5px;
-    font-size: 12px;
-    bottom: 2px;
-    color: #969799;
-}
-.record__price {
-    line-height: 50px;
-    color: rgb(255,93,35);
-    margin-right: 10px;
-}
-
-.record__pagenav {
-    display: -webkit-box;
-    display: -moz-box; 
-    display: -ms-flexbox;
-    display: -webkit-flex; 
-    display: flex; 
-    width: 310px;
-    position: absolute;
-    bottom: -20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    cursor: pointer;
-}
-
-.record__prev {
-    flex: 1;
-    text-align: center;
-    border: 1px solid rgba(121,127,137,0.8);
-    transition: 0.75s;
-    color: white;
-    background-color: rgb(57,169,237);
-}
-
-.record__prev:hover {
-    background-color: #7167ff;
-}
-.record__next {
-    flex: 1;
-    text-align: center;
-    border: 1px solid rgba(121,127,137,0.8);
-    transition: 0.75s;
-    background-color: rgb(57,169,237);
-    color: white;
-}
-.record__next:hover {
-    background-color: #7167ff;
 }.exVideoDiv {
     width: 500px;
     height: 250px;
@@ -2282,6 +1969,39 @@ function isValidImageFile(filename) {
   const ext = filename.substring(filename.lastIndexOf(".")).toLowerCase();
   return validExtensions.includes(ext);
 }
+
+function getCsrfToken() {
+  return new Promise((resolve) => {
+    GM_xmlhttpRequest({
+      method: 'POST',
+      url: 'https://www.douyu.com/japi/carnival/nc/common/generateCsrf',
+      headers: {
+        "Content-Type": "application/json",
+        "Cookie": document.cookie,
+      },
+      anonymous: false,
+      withCredentials: true,
+      onload: function (response) {
+        // 获取 Set-Cookie
+        const setCookie = response.responseHeaders.match(/set-cookie:[^\n\r]+/gi);
+        // 从set-cookie中获取csrfToken
+        let csrfToken = "";
+        for (const line of setCookie) {
+          const match = line.match(/cvl_csrf_token=([^;]+)/);
+          if (match) {
+            csrfToken = match[1]; // 返回提取到的 token
+            break;
+          }
+        }
+        resolve(csrfToken);
+      },
+      onerror: function (err) {
+        resolve("");
+      }
+    });
+  });
+}
+
 
 
 var mscststs = new class {
@@ -4276,7 +3996,7 @@ function initPkg_CopyRealLive_Func() {
     document.getElementsByClassName("Title-header")[0].title = tit + "点击复制直播流";
 }
 const lastTime = "Ex_DailyAuto_LastTime";
-const restRid = "52";
+const restRid = "12306";
 function initPkg_DailyAuto() {
   // <i class="Backpack-newPropTip">获得新道具</i>
   setTimeout(() => {
@@ -5666,10 +5386,29 @@ async function endFish() {
 
 function saveData_AutoFish() {
   let value = document.getElementById("extool__autofish_start").checked;
+  let rids = AutoFish_getRids() || [];
+  // 判断value是否为true，如果为true，则将当前rid添加到rids中，如果为false，则从rids中移除当前rid 
+  if (value) {
+    if (!rids.includes(rid)) {
+      rids.push(rid);
+    }
+  } else {
+    rids = rids.filter((item) => item !== rid);
+  }
   let data = {
-    isAutoFish: value
+    rids: rids
   };
   localStorage.setItem("ExSave_AutoFish", JSON.stringify(data)); // 存储弹幕列表
+}
+
+function AutoFish_getRids() {
+  const ret = localStorage.getItem("ExSave_AutoFish");
+  if (ret != null) {
+    let retJson = JSON.parse(ret);
+    return retJson ? retJson.rids : [];
+  } else {
+    return [];
+  }
 }
 
 function ExpandTool_AutoFish_Set() {
@@ -5677,7 +5416,8 @@ function ExpandTool_AutoFish_Set() {
   let ret = localStorage.getItem("ExSave_AutoFish");
   if (ret != null) {
     let retJson = JSON.parse(ret);
-    if (!retJson.isAutoFish) return;
+    if (!retJson.rids) return;
+    if (!retJson.rids.includes(rid)) return;
     document.getElementById("extool__autofish_start").click();
   }
 }
@@ -6594,6 +6334,7 @@ function sendGift_any(gid, count, rid) {
 	})
 }
 function initPkg_ExpandTool_TabSwitch() {
+  enableIgnoreAutoPause();
   ExpandTool_TabSwitch_insertDom();
   ExpandTool_TabSwitch_insertFunc();
   initPkg_ExpandTool_TabSwitch_Set();
@@ -6602,7 +6343,7 @@ function initPkg_ExpandTool_TabSwitch() {
 function ExpandTool_TabSwitch_insertDom() {
   let a = document.createElement("span");
   // a.className = "extool__bsize";
-  a.innerHTML = '<label title="阻止页面后台挂机检测"><input style="margin-top:5px;" id="extool__tabSwitch" type="checkbox">页面防挂机</label>';
+  a.innerHTML = '<label title="阻止浏览器页签冻结"><input style="margin-top:5px;" id="extool__tabSwitch" type="checkbox">防页签冻结</label>';
   
   let b = document.getElementsByClassName("extool")[0];
   b.insertBefore(a, b.childNodes[0]);
@@ -6652,6 +6393,12 @@ function enableTabSwitch() {
       e.stopImmediatePropagation();
   }, true, true);
 }
+
+function enableIgnoreAutoPause() {
+  // 防止直播自动暂停
+  localStorage.setItem("freetimed", "1");
+}
+
 var isGetTreasure = false;
 function initPkg_ExpandTool_Treasure() {
     ExpandTool_Treasure_insertDom();
@@ -10153,6 +9900,9 @@ function setNightMode() {
 
     /*加入公会*/
     .SociatyLabelPop-content{background:rgb(35,36,39) !important;}
+
+    /*任务文字*/
+    .taskScoreEntryTxt{color:#BFBFBF !important;}
     `;
     StyleHook_set("Ex_Style_NightMode", cssText);
 
@@ -10275,489 +10025,6 @@ function setNightModeIframe() {
 
 function cancelNightModeIframe() {
     StyleHook_removeIframe(document.getElementsByClassName("BottomGroup")[0].getElementsByTagName("iframe")[0].contentWindow.document, "Ex_Style_NightModeIframe")
-}
-function initPkg_Point() {
-	initPkg_Point_insertDom();
-    initPkg_Point_Func();
-    initPkg_Point_Constructor();
-    initPkg_Point_Module();
-}
-
-function initPkg_Point_Module() {
-    initPkg_Point_PointPanel();
-}
-
-function initPkg_Point_insertDom() {
-	let a = document.createElement("div");
-    a.id = "ex-point";
-    a.innerHTML = `
-    <span>💗 积分</span>
-    <span id="point__value" class="PlayerToolbar-dataLoadding"></span>
-    `;
-	let b = document.getElementsByClassName("PlayerToolbar-Wealth")[0];
-	b.insertBefore(a, b.childNodes[0]);
-}
-
-function initPkg_Point_Func() {
-    document.getElementById("ex-point").addEventListener("click", () => {
-        let a = document.getElementsByClassName("point__panel")[0];
-        if (a.style.display != "block") {
-            a.style.display = "block";
-        } else {
-            a.style.display = "none";
-        }
-    })
-}
-
-async function initPkg_Point_Constructor() {
-    let ret = await getUserPoint(dyToken);
-    let valueDom = document.getElementById("point__value");
-    if (ret.error == "0") {
-        valueDom.className = "";
-        valueDom.innerText = ret.data[0].point;
-        document.getElementById("ex-point").title = `更新时间：${ ret.data[0].update_time }`;
-    } else if (ret.error == "2") {
-        alert(ret.msg);
-    } else {
-        valueDom.className = "";
-        valueDom.innerText = "0";
-    }
-}
-
-async function updateUserPoint() {
-    let ret = await getUserPoint(dyToken);
-    let valueDom = document.getElementById("point__value");
-    if (ret.error == "0") {
-        valueDom.className = "";
-        valueDom.innerText = ret.data[0].point;
-        document.getElementById("ex-point").title = `更新时间：${ ret.data[0].update_time }`;
-        showMessage("【积分系统】积分更新完毕", "success");
-    } else if (ret.error == "2") {
-        alert(ret.msg);
-    } else {
-        valueDom.className = "";
-        valueDom.innerText = "0";
-    }
-}
-
-function getUserPoint(token) {
-    // 获取用户积分
-    return new Promise(resolve => {
-        GM_xmlhttpRequest({
-            method: "POST",
-            url: "http://122.51.5.63:27999/douyu/point/5189167/query_by_uid",
-            data: "token=" + token,
-            responseType: "json",
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            onload: function(response) {
-                let ret = response.response;
-                resolve(ret);
-            }
-        });
-    })
-}
-
-function getItemList(token) {
-    // 获取物品列表
-    return new Promise(resolve => {
-        GM_xmlhttpRequest({
-            method: "POST",
-            url: "http://122.51.5.63:27999/douyu/point/5189167/query_item",
-            data: "token=" + token,
-            responseType: "json",
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            onload: function(response) {
-                let ret = response.response;
-                resolve(ret);
-            }
-        });
-    })
-}
-
-function exchangeItem(token, item_id, id, info) {
-    // 兑换物品
-    return new Promise(resolve => {
-        GM_xmlhttpRequest({
-            method: "POST",
-            url: "http://122.51.5.63:27999/douyu/point/5189167/exchange",
-            data: "token=" + token + "&item_id=" + item_id + "&id=" + id + "&info=" + info,
-            responseType: "json",
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            onload: function(response) {
-                let ret = response.response;
-                resolve(ret);
-            }
-        });
-    })
-}
-
-
-function getExchangeRecord(token, offset) {
-    return new Promise(resolve => {
-        GM_xmlhttpRequest({
-            method: "POST",
-            url: "http://122.51.5.63:27999/douyu/point/5189167/query_exchange",
-            data: "token=" + token + "&offset=" + offset,
-            responseType: "json",
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            onload: function(response) {
-                let ret = response.response;
-                resolve(ret);
-            }
-        });
-    })
-}
-
-function getPointList(token) {
-    return new Promise(resolve => {
-        GM_xmlhttpRequest({
-            method: "POST",
-            url: "http://122.51.5.63:27999/douyu/point/5189167/point_list",
-            data: "token=" + token,
-            responseType: "json",
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            onload: function(response) {
-                let ret = response.response;
-                resolve(ret);
-            }
-        });
-    })
-}
-function initPkg_Point_PointExchange() {
-    initPkg_Point_PointExchange_insertDom();
-    initPkg_Point_PointExchange_insertFunc();
-}
-function initPkg_Point_PointExchange_insertDom() {
-	renderExchangePanel();
-}
-
-function initPkg_Point_PointExchange_insertFunc() {
-
-}
-
-
-async function renderExchangePanel() {
-    if (document.getElementById("ex-exchange") !== null) {
-        return;
-    }
-
-    let ret = await getItemList(dyToken);
-    if (ret.error != "0") {
-        showMessage("【积分系统】获取物品列表失败：" + ret.msg, "error");
-        return;
-    }
-    if (ret.data == null) {
-        showMessage("【积分系统】暂无可兑换的物品", "error");
-        return;
-    }
-
-    let a = document.createElement("div");
-    a.id = "ex-exchange";
-    
-    let html = `<div class="exchange__panel"><div class="exchange__close">X</div>
-    <div class="exchange__wrap">`;
-    for (let i = 0; i < ret.data.length; i++) {
-        html = html + `
-            <div class="item__wrap">
-                <img class="item__pic" src="${ ret.data[i].pic }" />
-                <span class="item__name">${ ret.data[i].name }</span>
-                <span class="item__description">${ ret.data[i].description }</span>
-                <span class="item__num">剩余 ${ ret.data[i].num } 件</span>
-                <span class="item__price">💗${ ret.data[i].price }</span>
-                <div class="item__exchange">兑换</div>
-            </div>
-        `;
-    }
-    html = html + "</div></div>";
-
-    a.innerHTML = html;
-
-    let b = document.getElementsByClassName("PlayerToolbar-Wealth")[0];
-    b.insertBefore(a, b.childNodes[0]);
-    
-    bindExchangePanel(ret);
-}
-
-function bindExchangePanel(itemJson) {
-    let dom = document.getElementsByClassName("item__exchange");
-    for (let i = 0; i < dom.length; i++) {
-        dom[i].onclick = () => {
-            exchangeItemEvent(itemJson.data[i].id, itemJson.data[i].num, itemJson.data[i].price);
-        }
-    }
-    document.getElementsByClassName("exchange__close")[0].onclick = () => {
-        let a = document.getElementById("ex-exchange");
-        if (a !== null) {
-            a.remove();
-        }
-    }
-}
-async function exchangeItemEvent(item_id, item_num, item_price){
-    if (item_num <= 0) {
-        showMessage("【积分系统】兑换失败：物品数量不足", "error");
-        return;
-    }
-    let currentPoint = document.getElementById("point__value").innerText;
-    if (currentPoint - item_price < 0) {
-        showMessage("【积分系统】兑换失败：积分不足", "error");
-        return;
-    }
-
-    showPrompt("请填写备注信息（联系方式/收货地址）",async (info) => {
-        if (info == "") {
-            showMessage("【积分系统】兑换失败：未填写备注信息", "error");
-            return;
-        }
-        
-        let id = await getUserName();
-        let ret = await exchangeItem(dyToken, item_id, id, info);
-        if (ret.error == "0") {
-            showMessage("【积分系统】" + ret.msg, "success");
-            if (ret.data.length > 0) {
-                document.getElementById("point__value").innerText = ret.data[0].point;
-                document.getElementById("ex-point").title = `更新时间：${ ret.data[0].update_time }`;
-            }
-        } else {
-            showMessage("【积分系统】" + ret.msg, "error");
-        }
-    }, () => {return});
-    
-}
-
-function initPkg_Point_PointList() {
-    initPkg_Point_PointList_insertDom();
-}
-function initPkg_Point_PointList_insertDom() {
-    renderPointList();
-}
-
-function initPkg_Point_PointList_insertFunc() {
-    document.getElementsByClassName("pointlist__close")[0].onclick = () => {
-        let a = document.getElementById("ex-pointlist");
-        if (a !== null) {
-            a.remove();
-        }
-    }
-}
-
-async function renderPointList() {
-    if (document.getElementById("ex-pointlist") !== null) {
-        return;
-    }
-
-    let ret = await getPointList(dyToken);
-    if (ret.error != "0") {
-        showMessage("【积分系统】获取积分榜失败：" + ret.msg, "error");
-        return;
-    }
-    if (ret.data == null) {
-        showMessage("【积分系统】积分榜暂无数据", "error");
-        return;
-    }
-
-    let a = document.createElement("div");
-    a.id = "ex-pointlist";
-    
-    let html = `<div class="pointlist__close">X</div>
-    <div class="pointlist__wrap">
-    <table>
-        <tr>
-            <th>排名</th>
-            <th>昵称</th>
-            <th>积分</th>
-        </tr>`;
-    for (let i = 0; i < ret.data.length; i++) {
-        html = html + `
-        <tr>
-            <td>${ i + 1 }</td>
-            <td>${ ret.data[i].id }</td>
-            <td>${ ret.data[i].point }</td>
-        </tr>
-        `;
-    }
-    html = html + "</table></div>";
-
-    a.innerHTML = html;
-
-    let b = document.getElementsByClassName("PlayerToolbar-Wealth")[0];
-    b.insertBefore(a, b.childNodes[0]);
-
-    // 异步函数所以要把绑定函数放在最后
-    initPkg_Point_PointList_insertFunc();
-}
-function initPkg_Point_PointPanel() {
-    initPkg_Point_PointPanel_insertDom();
-    initPkg_Point_PointPanel_insertFunc();
-}
-function initPkg_Point_PointPanel_insertDom() {
-	let a = document.createElement("div");
-	a.className = "point__panel";
-    a.innerHTML = `
-            <div class="panel__wrap">
-                <div id="panel__update" class="panel__cell">更新积分</div>
-                <div id="panel__pointlist" class="panel__cell">积分榜</div>
-				<div id="panel__exchange" class="panel__cell">兑换物品</div>
-				<div id="panel__record" class="panel__cell">兑换记录</div>
-				<div id="panel__rules" class="panel__cell">积分规则</div>
-			</div>
-			<div class="panel__triangle"></div>
-    `;
-	
-	let b = document.getElementsByClassName("PlayerToolbar-Wealth")[0];
-	b.insertBefore(a, b.childNodes[0]);
-	
-}
-
-function initPkg_Point_PointPanel_insertFunc() {
-    document.getElementById("panel__update").addEventListener("click",  () => {
-        closePointPanel();
-        updateUserPoint();
-    });
-    document.getElementById("panel__pointlist").addEventListener("click",  () => {
-        closePointPanel();
-        initPkg_Point_PointList();
-    });
-    document.getElementById("panel__exchange").addEventListener("click", async () => {
-        closePointPanel();
-        initPkg_Point_PointExchange();
-    });
-    document.getElementById("panel__record").addEventListener("click", async () => {
-        closePointPanel();
-        initPkg_Point_PointRecord();
-    });
-    document.getElementById("panel__rules").addEventListener("click",  async () => {
-        closePointPanel();
-        openPage("https://qianjiachun.github.io/DouyuEx/rules", true);
-    });
-}
-
-function closePointPanel() {
-    document.getElementsByClassName("point__panel")[0].style.display = "none";
-}
-
-let currentOffset = 0;
-let maxOffset = 99999;
-function initPkg_Point_PointRecord() {
-    currentOffset = 0;
-    initPkg_Point_PointRecord_insertDom();
-    initPkg_Point_PointRecord_insertFunc();
-}
-function initPkg_Point_PointRecord_insertDom() {
-    renderRecordWrap();
-    renderRecord(currentOffset);
-}
-
-function initPkg_Point_PointRecord_insertFunc() {
-    document.getElementsByClassName("record__close")[0].onclick = () => {
-        let a = document.getElementById("ex-record");
-        if (a !== null) {
-            a.remove();
-        }
-    }
-    document.getElementsByClassName("record__prev")[0].onclick = () => {
-        if (currentOffset < 10) {
-            showMessage("【积分系统】兑换系统已到首页", "error");
-            return;
-        }
-        currentOffset = currentOffset - 10;
-        renderRecord(currentOffset);
-    }
-    document.getElementsByClassName("record__next")[0].onclick = () => {
-        if (currentOffset >= maxOffset) {
-            showMessage("【积分系统】兑换系统已到尾页", "error");
-            return;
-        }
-        currentOffset = currentOffset + 10;
-        renderRecord(currentOffset);
-    }
-}
-
-
-function renderRecordWrap() {
-    if (document.getElementById("ex-record") !== null) {
-        return;
-    }
-    let a = document.createElement("div");
-    a.id = "ex-record";
-    
-    let html = `
-    <div class="record__close">X</div>
-    <div class="records__wrap"></div>
-    <div class="record__pagenav">
-        <div class="record__prev">上一页</div>
-        <div class="record__next">下一页</div>
-    </div>
-    `;
-    a.innerHTML = html;
-    let b = document.getElementsByClassName("PlayerToolbar-Wealth")[0];
-    b.insertBefore(a, b.childNodes[0]);
-}
-
-async function renderRecord(offset) {
-    let dom = document.getElementsByClassName("records__wrap");
-    if (dom.length <= 0) {
-        return;
-    }
-    dom[0].innerHTML = "";
-
-
-    let recordList = await getExchangeRecord(dyToken, offset);
-    if (recordList.error != "0") {
-        showMessage("【积分系统】" + recordList.msg, "error");
-        return;
-    }
-    if (recordList.data == null) {
-        maxOffset = currentOffset;
-        showMessage("【积分系统】无兑换记录", "error");
-        return;
-    }
-    
-    
-
-    let html = "";
-
-
-    for (let i = 0; i < recordList.data.length; i++) {
-        html += `
-        <div class="record__wrap">
-            <div class="record__left">
-                <div class="record__name">（${ recordList.data[i].status=="1"?"已发货":"未发货" }）${ recordList.data[i].item_name }</div>
-                <div class="record__updatetime">${ recordList.data[i].update_time }</div>
-            </div>
-            <div class="record__right">
-                <div class="record__price">💗${ recordList.data[i].price }</div>
-            </div>
-        </div>
-        `;
-    }
-
-    dom[0].innerHTML = html;
-
-    bindRecord(recordList);
-}
-
-function bindRecord(recordJson) {
-    let dom = document.getElementsByClassName("record__wrap");
-    for (let i = 0; i < dom.length; i++) {
-        dom[i].onclick = () => {
-            PostbirdAlertBox.alert({
-                'title': '备注信息',
-                'content': recordJson.data[i].info,
-                'okBtn': '确定',
-                'contentColor': 'rgb(51,51,51)',
-            });
-        }
-    }
 }
 var videoPlayerArr = [];
 
@@ -12181,6 +11448,10 @@ function removeAD() {
     #js-player-asideMain {
         top: 0!important;
     }
+    /*右下角联系客服*/
+    .bacpCommonKeFu {
+        display: none!important;
+    }
     `);
     // body{transform: translateZ(0)!important;}
     // .RomanticDatePanelModal-middle--small{height:220px !important;}
@@ -12544,17 +11815,18 @@ function initPkg_Sign_Main(isAll) {
 		// initPkg_Sign_TV(); // 2022年9月1日23:41:59 失效
 		// initPkg_Sign_Yuba_Like(); // 2022年9月1日23:41:59 失效
         
-        // initPkg_Sign_Renlei();
-        initPkg_Sign_Act();
-				initPkg_Sign_ActqzsUserTask();
-        // initPkg_Sign_Bowuyuan();
-        // initPkg_Sign_ZBXSL2();
-        // initPkg_Sign_COD();
+		// initPkg_Sign_Renlei();
+		initPkg_Sign_Act();
+		initPkg_Sign_ActqzsUserTask();
+		// initPkg_Sign_Bowuyuan();
+		// initPkg_Sign_ZBXSL2();
+		// initPkg_Sign_COD();
 		// initPkg_Sign_Wangzhe();
 		initPkg_Sign_ReadPosts();
 		initPkg_Sign_Follow();
 		initPkg_Sign_FansTree();
 		initPkg_Sign_SuperFans();
+		initPkg_Sign_OPFOY();
 }
 
 // function takeActPrize(name) {
@@ -13186,6 +12458,104 @@ function getMotorcadeID(tinyid, a2, identifier) {
         });
     })
 }
+async function initPkg_Sign_OPFOY() {
+  const csrfToken = await getCsrfToken();
+  const ret = await signOPFOY(csrfToken);
+  if (ret.error == 0) {
+    showMessage(`【积分任务】签到成功，${ret.msg}`, "success");
+  } else {
+    showMessage(`【积分任务】${ret.msg}`, "error");
+  }
+}
+
+function signOPFOY(csrfToken) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/japi/carnivalApi/sign/doSign", {
+      method: "POST",
+      mode: "no-cors",
+      credentials: "include",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `csrfToken=${csrfToken}&signAlias=20250521OPFOY_qd2&useJiYan=false`
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((ret) => {
+        resolve(ret);
+      })
+      .catch((err) => {
+        console.log("请求失败!", err);
+        reject(err);
+      });
+  });
+}
+
+function initPkg_Sign_OPFOY_Timer() {
+  // 每15分钟领取一次观时积分
+  checkOPFOYViewStatus();
+  setInterval(checkOPFOYViewStatus, 15 * 60 * 1000);
+}
+
+async function checkOPFOYViewStatus() {
+  const status = await getOPFOYViewStatus();
+  const taskList = status.data.taskList;
+  const startTime = status.data.startTime;
+  if (!taskList) return;
+  for (const id in taskList) {
+    const task = taskList[id];
+    if (task.status !== 2) continue;
+    const ret = await getOPFOYGift(id, startTime);
+    if (ret.error == 0) {
+      showMessage(`【积分任务】观时积分领取成功`, "success");
+    } else {
+      showMessage(`【积分任务】${ret.msg}`, "error");
+    }
+  }
+}
+
+function getOPFOYViewStatus() {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/wgapi/activitync/gametask/viewStatus", {
+      method: "POST",
+      mode: "no-cors",
+      credentials: "include",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `ctn=${getCCN()}&actAlias=20250521OPFOY`
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((ret) => {
+        resolve(ret);
+      })
+      .catch((err) => {
+        console.log("请求失败!", err);
+        reject(err);
+      });
+  });
+}
+
+function getOPFOYGift(id, startTime) {
+  return new Promise((resolve) => {
+    fetch("https://www.douyu.com/wgapi/activitync/gametask/takeGift", {
+      method: "POST",
+      mode: "no-cors",
+      credentials: "include",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `ctn=${getCCN()}&id=${id}&actAlias=20250521OPFOY&startTime=${startTime}`
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((ret) => {
+        resolve(ret);
+      })
+      .catch((err) => {
+        console.log("请求失败!", err);
+      });
+  });
+}
+
 async function initPkg_Sign_ReadPosts() {
 	const counts = 5;
   for (let i = 0; i < counts; i++) {
@@ -13599,7 +12969,7 @@ function initPkg_SyncJoy_Func() {
 
 // 版本号
 // 格式 yyyy.MM.dd.**
-var curVersion = "2025.04.09.01"
+var curVersion = "2025.05.26.01"
 var isNeedUpdate = false
 var lastestVersion = ""
 function initPkg_Update() {
@@ -16681,9 +16051,6 @@ function initPkg_meta() {
 }
 
 function initPkgSpecial() {
-  // if (rid == "5189167") {
-  //     initPkg_Point();
-  // }
 }
 
 // function initRouter_Novel() {
