@@ -56,6 +56,10 @@ function initPkg_Timer() {
     initPkg_DisableCloseJump_Timer();
     initPkg_LevelTask_Timer();
     initPkg_Sign_OPFOY_Timer();
+    // initPkg_FishPond_Timer();
+    initPkg_LevelTask_Timer();
+    initPkg_Sign_OPFOY_Timer();
+    initPkg_DisableCloseJump_Timer();
 }
 
 function initTimer() {
@@ -6990,6 +6994,11 @@ function getImageDanmakuFromImgSrc(src) {
 }
 
 async function initPkg_LevelTask_Timer() {
+  checkLevelTask();
+  setInterval(checkLevelTask, 35 * 1000);
+}
+
+async function checkLevelTask() {
   let ids = await getLevelTaskIds(rid);
   let tasks = await getLevelTasks(ids);
   for (let i = 0; i < tasks.length; i++) {
@@ -11827,6 +11836,7 @@ function initPkg_Sign_Main(isAll) {
 		initPkg_Sign_FansTree();
 		initPkg_Sign_SuperFans();
 		initPkg_Sign_OPFOY();
+		initPkg_Sign_AnchorStar();
 }
 
 // function takeActPrize(name) {
@@ -12216,6 +12226,76 @@ function getFishBall_Ad_Sign() {
     
 	
 }
+async function initPkg_Sign_AnchorStar() {
+  const roomListRes = await getAnchorStarRoomList().catch(() => {});
+  const roomList = roomListRes.data.rankItemList;
+  if (!roomList || (roomList && roomList.length == 0)) return;
+  for (let i = 0; i < 3; i++) {
+    const rid = roomList[i].rid;
+    if (!rid) continue;
+    await signAnchorStar(rid);
+    await sleep(500);
+  }
+  showMessage("【星推】签到任务完成", "success");
+  for (let i = 0; i < 5; i++) {
+    const rid = roomList[i].rid;
+    if (!rid) continue;
+    const res = await addFollowRoom(rid);
+    await sleep(500);
+    if (res.error == 1) {
+      // 已关注（再关注回来）
+      await removeFollowRoom(rid);
+      await sleep(500);
+      await addFollowRoom(rid);
+    } else {
+      await removeFollowRoom(rid);
+    }
+    await sleep(500);
+  }
+  showMessage("【星推】关注任务完成", "success");
+}
+
+function getAnchorStarRoomList() {
+  return new Promise((resolve, reject) => {
+    fetch(`https://www.douyu.com/japi/livebiznc/web/anchorstardiscover/rank/info?rid=${rid}&type=5&track=3`, {
+      method: "GET",
+      mode: "no-cors",
+      credentials: "include"
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((ret) => {
+        resolve(ret);
+      })
+      .catch((err) => {
+        console.log("请求失败!", err);
+        reject(err);
+      });
+  });
+}
+
+function signAnchorStar(rid) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/japi/livebiznc/web/anchorstardiscover/user/task/report", {
+      method: "POST",
+      mode: "no-cors",
+      credentials: "include",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `ctn=${getCCN()}&type=5&rid=${rid}`
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((ret) => {
+        resolve(ret);
+      })
+      .catch((err) => {
+        console.log("请求失败!", err);
+        reject(err);
+      });
+  });
+}
 function initPkg_Sign_Client() {
 	signClient();
 }
@@ -12491,9 +12571,8 @@ function signOPFOY(csrfToken) {
 }
 
 function initPkg_Sign_OPFOY_Timer() {
-  // 每15分钟领取一次观时积分
   checkOPFOYViewStatus();
-  setInterval(checkOPFOYViewStatus, 15 * 60 * 1000);
+  setInterval(checkOPFOYViewStatus, 5 * 60 * 1000);
 }
 
 async function checkOPFOYViewStatus() {
@@ -12969,7 +13048,7 @@ function initPkg_SyncJoy_Func() {
 
 // 版本号
 // 格式 yyyy.MM.dd.**
-var curVersion = "2025.05.26.01"
+var curVersion = "2025.05.27.01"
 var isNeedUpdate = false
 var lastestVersion = ""
 function initPkg_Update() {
