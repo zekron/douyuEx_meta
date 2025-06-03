@@ -175,10 +175,8 @@ function setAvatarVideo() {
 
   setAvatarVideo_Dom();
   setAvatarVideo_Func(videoUrl, videoReplayUrl);
-  document.getElementsByClassName("Title-anchorPic-bottom")[0].style.display =
-    "none";
-  document.getElementsByClassName("Title-anchorPic-bottom")[0].style.height =
-    hasAvatarBottom ? "44px" : "22px";
+  document.getElementsByClassName("Title-anchorPic-bottom")[0].style.display = "none";
+  document.getElementsByClassName("Title-anchorPic-bottom")[0].style.height = hasAvatarBottom ? "44px" : "22px";
 
   document
     .getElementsByClassName("Title-anchorPicBack")[0]
@@ -207,10 +205,8 @@ function setAvatarVideo_Dom() {
 	<div id="Ex_VideoReview" class="Title-anchorPic-bottomItem"><span>回看</span></div>
 	<i style="top: 28px"></i>
 	<div id="Ex_VideoSubmit" class="Title-anchorPic-bottomItem"><span>投稿</span></div>
-	`;
-  let b =
-    document.getElementsByClassName("Title-anchorPic-bottom")[0] ||
-    document.getElementsByClassName("Title-anchorPicBack")[0];
+	`
+  let b = document.getElementsByClassName("Title-anchorPic-bottom")[0] || document.getElementsByClassName("Title-anchorPicBack")[0];
   b.append(a);
 }
 
@@ -221,7 +217,7 @@ function setAvatarVideo_Func(videoUrl, videoReplayUrl) {
 
   document.getElementById("Ex_VideoReview").addEventListener("click", () => {
     openPage(videoReplayUrl, true);
-  });
+  })
 }
 
 function getTodayWatch(rid) {

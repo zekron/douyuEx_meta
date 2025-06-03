@@ -3,8 +3,8 @@
 // @name         DouyuEx_Meta
 // @namespace
 // @icon         data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTA4cHgiIGhlaWdodD0iMTA4cHgiIHZpZXdCb3g9IjAgMCAxMDggMTA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPueyvueBteeQgzwvdGl0bGU+CiAgICA8ZyBpZD0i6aG16Z2iLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLnsr7ngbXnkIMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODMwNzY5LCAwLjgzMDc2OSkiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDEwNi4zMzg0NjEgQzIzLjgyNzY5MjIsMTA2LjMzODQ2MSAwLDgyLjUxMDc2OTIgMCw1My4xNjkyMzA3IEMwLDUxLjAwMzA3NjkgMS43NzIzMDc3NSw0OS4yMzA3NjkyIDMuOTM4NDYxNSw0OS4yMzA3NjkyIEwzMy40NzY5MjMsNDkuMjMwNzY5MiBDMzUuNjQzMDc2OSw0OS4yMzA3NjkyIDM3LjQxNTM4NDUsNTEuMDAzMDc3IDM3LjQxNTM4NDYsNTMuMTY5MjMwNyBDMzcuNDE1Mzg0Niw2MS44MzM4NDYxIDQ0LjUwNDYxNTQsNjguOTIzMDc2OSA1My4xNjkyMzA3LDY4LjkyMzA3NjkgQzYxLjgzMzg0NjEsNjguOTIzMDc2OSA2OC45MjMwNzY5LDYxLjgzMzg0NjEgNjguOTIzMDc2OSw1My4xNjkyMzA3IEM2OC45MjMwNzY5LDUxLjAwMzA3NjkgNzAuNjk1Mzg0Niw0OS4yMzA3NjkyIDcyLjg2MTUzODUsNDkuMjMwNzY5MiBMMTAyLjQsNDkuMjMwNzY5MiBDMTA0LjU2NjE1NCw0OS4yMzA3NjkyIDEwNi4zMzg0NjEsNTEuMDAzMDc3IDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw4Mi41MTA3NjkyIDgyLjUxMDc2OTIsMTA2LjMzODQ2MSA1My4xNjkyMzA3LDEwNi4zMzg0NjEgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iIzMzMzYzQSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNOC4wNzM4NDYxMiw1Ny4xMDc2OTIyIEMxMC4wNDMwNzY5LDgwLjI0NjE1MzcgMjkuNTM4NDYxNSw5OC40NjE1Mzg1IDUzLjE2OTIzMDcsOTguNDYxNTM4NSBDNzYuOCw5OC40NjE1Mzg1IDk2LjI5NTM4NDYsODAuMjQ2MTUzOSA5OC4yNjQ2MTU0LDU3LjEwNzY5MjIgTDc2LjUwNDYxNTQsNTcuMTA3NjkyMiBDNzQuNjMzODQ2MSw2OC4yMzM4NDYxIDY0Ljg4NjE1MzksNzYuOCA1My4xNjkyMzA3LDc2LjggQzQxLjQ1MjMwNzYsNzYuOCAzMS43MDQ2MTU0LDY4LjIzMzg0NjEgMjkuODMzODQ2MSw1Ny4xMDc2OTIyIEw4LjA3Mzg0NjEyLDU3LjEwNzY5MjIgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwOCwzLjkzODQ2MTUgQzI1Ljk5Mzg0NjEsMy45Mzg0NjE1IDMuOTM4NDYxNSwyNS45OTM4NDYxIDMuOTM4NDYxNSw1My4xNjkyMzA3IEwzMy40NzY5MjMsNTMuMTY5MjMwNyBDMzMuNDc2OTIzLDQyLjMzODQ2MTUgNDIuMzM4NDYxNSwzMy40NzY5MjMgNTMuMTY5MjMwOCwzMy40NzY5MjMgQzY0LDMzLjQ3NjkyMyA3Mi44NjE1Mzg1LDQyLjMzODQ2MTUgNzIuODYxNTM4NSw1My4xNjkyMzA3IEwxMDIuNCw1My4xNjkyMzA3IEMxMDIuNCwyNS45OTM4NDYxIDgwLjM0NDYxNTQsMy45Mzg0NjE1IDUzLjE2OTIzMDgsMy45Mzg0NjE1IFoiIGlkPSLot6/lvoQiIGZpbGw9IiNENjA5MDkiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTEwMi40LDU3LjEwNzY5MjIgTDcyLjg2MTUzODUsNTcuMTA3NjkyMiBDNzAuNjk1Mzg0Niw1Ny4xMDc2OTIyIDY4LjkyMzA3Nyw1NS4zMzUzODQ1IDY4LjkyMzA3NjksNTMuMTY5MjMwNyBDNjguOTIzMDc2OSw0NC41MDQ2MTU0IDYxLjgzMzg0NjEsMzcuNDE1Mzg0NiA1My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDU1LjMzNTM4NDYgMzUuNjQzMDc2OSw1Ny4xMDc2OTIyIDMzLjQ3NjkyMyw1Ny4xMDc2OTIyIEwzLjkzODQ2MTUsNTcuMTA3NjkyMiBDMS43NzIzMDc2Miw1Ny4xMDc2OTIyIDAsNTUuMzM1Mzg0NSAwLDUzLjE2OTIzMDcgQzAsMjMuODI3NjkyMiAyMy44Mjc2OTIzLDAgNTMuMTY5MjMwNywwIEM4Mi41MTA3NjkyLDAgMTA2LjMzODQ2MSwyMy44Mjc2OTIyIDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw1NS4zMzUzODQ2IDEwNC41NjYxNTQsNTcuMTA3NjkyMiAxMDIuNCw1Ny4xMDc2OTIyIFoiIGlkPSLot6/lvoQiIGZpbGw9IiMzMzM2M0EiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTc2LjUwNDYxNTQsNDkuMjMwNzY5MyBMOTguMzYzMDc2OSw0OS4yMzA3NjkzIEM5Ni4yOTUzODQ2LDI2LjA5MjMwNzYgNzYuOCw3Ljg3NjkyMyA1My4xNjkyMzA3LDcuODc2OTIzIEMyOS41Mzg0NjE1LDcuODc2OTIzIDEwLjA0MzA3NjksMjYuMDkyMzA3NiA4LjA3Mzg0NjEyLDQ5LjIzMDc2OTMgTDI5LjkzMjMwNzYsNDkuMjMwNzY5MyBDMzEuNzA0NjE1NCwzOC4xMDQ2MTU0IDQxLjQ1MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY0Ljg4NjE1MzksMjkuNTM4NDYxNSA3NC42MzM4NDYxLDM4LjEwNDYxNTQgNzYuNTA0NjE1NCw0OS4yMzA3NjkzIEw3Ni41MDQ2MTU0LDQ5LjIzMDc2OTMgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0Q2MDkwOSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwNyw3Ni44IEM0MC4xNzIzMDc2LDc2LjggMjkuNTM4NDYxNSw2Ni4xNjYxNTM5IDI5LjUzODQ2MTUsNTMuMTY5MjMwNyBDMjkuNTM4NDYxNSw0MC4xNzIzMDc2IDQwLjE3MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY2LjE2NjE1MzksMjkuNTM4NDYxNSA3Ni44LDQwLjE3MjMwNzYgNzYuOCw1My4xNjkyMzA3IEM3Ni44LDY2LjE2NjE1MzkgNjYuMTY2MTUzOSw3Ni44IDUzLjE2OTIzMDcsNzYuOCBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDYxLjgzMzg0NjEgNDQuNTA0NjE1NCw2OC45MjMwNzY5IDUzLjE2OTIzMDcsNjguOTIzMDc2OSBDNjEuODMzODQ2MSw2OC45MjMwNzY5IDY4LjkyMzA3NjksNjEuODMzODQ2MSA2OC45MjMwNzY5LDUzLjE2OTIzMDcgQzY4LjkyMzA3NjksNDQuNTA0NjE1NCA2MS44MzM4NDYxLDM3LjQxNTM4NDYgNTMuMTY5MjMwNywzNy40MTUzODQ2IEw1My4xNjkyMzA3LDM3LjQxNTM4NDYgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNDMuMzIzMDc2OSw1My4xNjkyMzA3IEM0My4zMjMwNzY5LDU4LjYwNzExMTQgNDcuNzMxMzUwMSw2My4wMTUzODQ2IDUzLjE2OTIzMDcsNjMuMDE1Mzg0NiBDNTguNjA3MTExNCw2My4wMTUzODQ2IDYzLjAxNTM4NDYsNTguNjA3MTExNCA2My4wMTUzODQ2LDUzLjE2OTIzMDcgQzYzLjAxNTM4NDYsNDcuNzMxMzUwMSA1OC42MDcxMTE0LDQzLjMyMzA3NjkgNTMuMTY5MjMwNyw0My4zMjMwNzY5IEM0Ny43MzEzNTAxLDQzLjMyMzA3NjkgNDMuMzIzMDc2OSw0Ny43MzEzNTAxIDQzLjMyMzA3NjksNTMuMTY5MjMwNyBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=
-// @version      2025.05.27.01
-// @description  斗鱼直播间增强插件，功能：弹幕自动变色防检测循环发送 一键续牌 查看真实人数/查看主播数据 已播时长 一键签到(直播间/车队/鱼吧/客户端) 一键领取鱼粮(宝箱/气泡/任务) 一键寻宝 送出指定数量的礼物 一键清空背包 屏蔽广告 调节弹幕大小 自动更新 同屏画中画/多直播间小窗观看/可在斗鱼看多个平台直播(虎牙/b站) 获取真实直播流地址 自动抢礼物红包 背包信息扩展 简洁模式 夜间模式 开播提醒 幻神模式 关键词回复 关键词禁言 自动谢礼物 自动抢宝箱 弹幕右键信息扩展 防止下播自动跳转 影院模式 直播时间流控制 弹幕投票 直播滤镜 直播音频流 账号多开/切换 显示粉丝牌获取日期 月消费数据显示 弹幕时速 相机截图录制gif 全景播放器 斗鱼视频下载/弹幕ass下载 直播画面局部缩放 全站抽奖信息 直播音效增强 阻止P2P上传 显示贡献榜贡献值 恢复弹幕显示 斗鱼视频弹幕高能进度条 检测弹幕是否发送成功 查看主播配置信息 自动网页全屏 自动最高画质 弹幕无限收藏 收藏弹幕搜索 支持弹幕带图片 屏蔽弹幕背景 弹幕+1 房间VIP到期提醒 自动钓鱼 防止自动暂停直播
+// @version      2025.06.03.02
+// @description  斗鱼直播间增强插件，功能：弹幕自动变色防检测循环发送 一键续牌 查看真实人数/查看主播数据 已播时长 一键签到(直播间/车队/鱼吧/客户端) 一键领取鱼粮(宝箱/气泡/任务) 一键寻宝 送出指定数量的礼物 一键清空背包 屏蔽广告 调节弹幕大小 自动更新 同屏画中画/多直播间小窗观看/可在斗鱼看多个平台直播(虎牙/b站) 获取真实直播流地址 自动抢礼物红包 背包信息扩展 简洁模式 夜间模式 开播提醒 幻神模式 关键词回复 关键词禁言 自动谢礼物 自动抢宝箱 弹幕右键信息扩展 防止下播自动跳转 影院模式 直播时间流控制 弹幕投票 直播滤镜 直播音频流 账号多开/切换 显示粉丝牌获取日期 月消费数据显示 弹幕时速 相机截图录制gif 全景播放器 斗鱼视频下载/弹幕ass下载 直播画面局部缩放 全站抽奖信息 直播音效增强 阻止P2P上传 显示贡献榜贡献值 恢复弹幕显示 斗鱼视频弹幕高能进度条 检测弹幕是否发送成功 查看主播配置信息 自动网页全屏 自动最高画质 弹幕无限收藏 收藏弹幕搜索 支持弹幕带图片 屏蔽弹幕背景 弹幕+1 房间VIP到期提醒 自动钓鱼 防止自动暂停直播 恢复已关闭鱼吧
 // @author       小淳
 // @match			*://*.douyu.com/0*
 // @match			*://*.douyu.com/1*
@@ -59,7 +59,6 @@
 // @connect      doseeing.com
 // @antifeature  tracking
 // ==/UserScript==
-
 function init() {
     initPkg_ShowDanmakuOriginAction();
     initScriptHook();
@@ -905,6 +904,14 @@ function initStyles() {
     display: flex;
     padding: 0 7px;
     line-height: 33px;
+}
+
+#Ex_EnterYuba {
+    width: 100%;
+}
+
+.Title-anchorPic-bottom i{
+    display: none !important;
 }/* #refresh-video {
     float: left;
     width: 24px;
@@ -10977,10 +10984,8 @@ function setAvatarVideo() {
 
   setAvatarVideo_Dom();
   setAvatarVideo_Func(videoUrl, videoReplayUrl);
-  document.getElementsByClassName("Title-anchorPic-bottom")[0].style.display =
-    "none";
-  document.getElementsByClassName("Title-anchorPic-bottom")[0].style.height =
-    hasAvatarBottom ? "44px" : "22px";
+  document.getElementsByClassName("Title-anchorPic-bottom")[0].style.display = "none";
+  document.getElementsByClassName("Title-anchorPic-bottom")[0].style.height = hasAvatarBottom ? "44px" : "22px";
 
   document
     .getElementsByClassName("Title-anchorPicBack")[0]
@@ -11009,10 +11014,8 @@ function setAvatarVideo_Dom() {
 	<div id="Ex_VideoReview" class="Title-anchorPic-bottomItem"><span>回看</span></div>
 	<i style="top: 28px"></i>
 	<div id="Ex_VideoSubmit" class="Title-anchorPic-bottomItem"><span>投稿</span></div>
-	`;
-  let b =
-    document.getElementsByClassName("Title-anchorPic-bottom")[0] ||
-    document.getElementsByClassName("Title-anchorPicBack")[0];
+	`
+  let b = document.getElementsByClassName("Title-anchorPic-bottom")[0] || document.getElementsByClassName("Title-anchorPicBack")[0];
   b.append(a);
 }
 
@@ -11023,7 +11026,7 @@ function setAvatarVideo_Func(videoUrl, videoReplayUrl) {
 
   document.getElementById("Ex_VideoReview").addEventListener("click", () => {
     openPage(videoReplayUrl, true);
-  });
+  })
 }
 
 function getTodayWatch(rid) {
@@ -11606,6 +11609,197 @@ function saveData_removeMsgNotice() {
     localStorage.setItem("ExSave_isRemoveMsgNotice", isRemoveMsgNotice); 
 }
 function initPkg_RemoveAdMeta() {}
+
+function initPkg_RestoreYuba() {
+  responseHook((url, text) => {
+    if (url.indexOf("group/getBindGroup") !== -1) {
+      return text.replace('"group_status":4', '"group_status":0');
+    }
+    return text;
+  });
+}
+
+function initPkg_RestoreYuba_restore() {
+  // 恢复被关闭的鱼吧
+  let oldId = null;
+  let newId = null;
+  oldId = RestoreYuba_getYubaId(window.location.href);
+  const urlParams = new URLSearchParams(window.location.search);
+  const exRestore = urlParams.get("exRestore");
+  if (!exRestore) return;
+  newId = Number(exRestore);
+
+  if (oldId === newId) return;
+
+  RestoreYuba_initHook(oldId, newId);
+  RestoreYuba_changeDom(oldId, newId);
+}
+
+function RestoreYuba_checkRedirect() {
+  const oldId = RestoreYuba_getYubaId(window.location.href);
+  if (!oldId) return;
+  getYubaStatus(oldId).then((data) => {
+    if (data.status_code == 3002) {
+      const url = "https://yuba.douyu.com/discussion/4815048/posts?exRestore=" + oldId;
+      window.location.href = url;
+    }
+  });
+}
+
+function RestoreYuba_getYubaId(url) {
+  const match = url.match(/\/discussion\/(\d+)/);
+  if (match && match[1]) {
+    return match[1];
+  }
+  return null;
+}
+
+function RestoreYuba_initHook(oldId, newId) {
+  // 排除的url的关键字
+  const excludeUrl = ["web/group/head", "/follow/topic", "group/unfollowGroup"];
+
+  // 检查URL是否应该被排除
+  function shouldExcludeUrl(url) {
+    if (typeof url !== "string") return false;
+    return excludeUrl.some((keyword) => url.includes(keyword));
+  }
+
+  // 拦截XMLHttpRequest请求
+  const originalOpen = unsafeWindow.XMLHttpRequest.prototype.open;
+  const originalSend = unsafeWindow.XMLHttpRequest.prototype.send;
+
+  // 修改open方法，拦截并修改URL
+  unsafeWindow.XMLHttpRequest.prototype.open = function (method, url, async, user, password) {
+    if (typeof url === "string" && url.includes(oldId) && !shouldExcludeUrl(url)) {
+      url = url.replace(new RegExp(oldId, "g"), newId);
+    }
+    return originalOpen.call(this, method, url, async, user, password);
+  };
+
+  // 修改send方法，拦截并修改请求体
+  unsafeWindow.XMLHttpRequest.prototype.send = function (body) {
+    // 获取当前请求的URL
+    const url = this.responseURL || this._url || "";
+
+    // 如果URL应该被排除，则不处理请求体
+    if (shouldExcludeUrl(url)) {
+      return originalSend.call(this, body);
+    }
+
+    if (body && typeof body === "string" && body.includes(oldId)) {
+      body = body.replace(new RegExp(oldId, "g"), newId);
+    } else if (body && body instanceof FormData) {
+      // 对FormData的处理比较复杂，需要遍历每个键值对
+      const newFormData = new FormData();
+      for (let pair of body.entries()) {
+        const key = pair[0];
+        let value = pair[1];
+
+        if (typeof value === "string" && value.includes(oldId)) {
+          value = value.replace(new RegExp(oldId, "g"), newId);
+        }
+
+        newFormData.append(key, value);
+      }
+      body = newFormData;
+    }
+
+    return originalSend.call(this, body);
+  };
+
+  // 拦截fetch请求
+  const originalFetch = unsafeWindow.fetch;
+  unsafeWindow.fetch = function (input, init) {
+    // 处理URL
+    let url = "";
+    if (typeof input === "string") {
+      url = input;
+      if (input.includes(oldId) && !shouldExcludeUrl(input)) {
+        input = input.replace(new RegExp(oldId, "g"), newId);
+      }
+    } else if (input instanceof Request) {
+      url = input.url;
+      if (url.includes(oldId) && !shouldExcludeUrl(url)) {
+        // 创建新的Request对象
+        input = new Request(url.replace(new RegExp(oldId, "g"), newId), input);
+      }
+    }
+
+    // 如果URL应该被排除，则不处理请求体
+    if (shouldExcludeUrl(url)) {
+      return originalFetch.call(unsafeWindow, input, init);
+    }
+
+    // 处理请求体
+    if (init && init.body) {
+      if (typeof init.body === "string" && init.body.includes(oldId)) {
+        init.body = init.body.replace(new RegExp(oldId, "g"), newId);
+      } else if (init.body instanceof FormData) {
+        // 对FormData的处理与上面相同
+        const newFormData = new FormData();
+        for (let pair of init.body.entries()) {
+          const key = pair[0];
+          let value = pair[1];
+
+          if (typeof value === "string" && value.includes(oldId)) {
+            value = value.replace(new RegExp(oldId, "g"), newId);
+          }
+
+          newFormData.append(key, value);
+        }
+        init.body = newFormData;
+      }
+    }
+
+    return originalFetch.call(unsafeWindow, input, init);
+  };
+}
+
+async function RestoreYuba_changeDom(oldId, newId) {
+  const anchorInfo = await getYubaAnchorInfo(newId);
+  if (anchorInfo) {
+    const info = anchorInfo.data.generalOP[0];
+    const avatar = info.avatar;
+    const nickname = info.nick_name;
+
+    function changeTitle() {
+      document.querySelector(".groupavatar__9mD1S .image__GNnZC").src = avatar;
+      document.getElementsByClassName("groupname__BUzOM")[0].innerText = nickname;
+      document.getElementsByClassName("groupdesc__b8-53")[0].innerText = `${nickname}的鱼吧`;
+    }
+
+    changeTitle();
+    new DomHook(".groupavatar__9mD1S", false, () => {
+      changeTitle();
+    });
+  }
+}
+
+function getYubaAnchorInfo(groupId) {
+  return new Promise((resolve) => {
+    fetch("https://yuba.douyu.com/wbapi/web/group/managersdetail?group_id=" + groupId)
+      .then((response) => response.json())
+      .then((data) => {
+        resolve(data);
+      })
+      .catch(() => {
+        resolve(null);
+      });
+  });
+}
+
+function getYubaStatus(groupId) {
+  return new Promise((resolve, reject) => {
+    fetch("https://yuba.douyu.com/wbapi/web/group/head?group_id=" + groupId)
+      .then((response) => response.json())
+      .then((data) => {
+        resolve(data);
+      })
+      .catch((error) => {
+        reject(error);
+      });
+  });
+}
 
 const roomVipExpireDayLimit = 3;
 function initPkg_RoomVip() {
@@ -12601,8 +12795,8 @@ function getMotorcadeID(tinyid, a2, identifier) {
 async function initPkg_Sign_OPFOY() {
   const csrfToken = await getCsrfToken();
   const ret = await signOPFOY(csrfToken);
-  if (ret.error == 0) {
-    showMessage(`【积分任务】签到成功，${ret.msg}`, "success");
+  if (ret.error == 0 || ret.error == 31200) {
+    showMessage(`【积分任务】${ret.msg}`, "success");
   } else {
     showMessage(`【积分任务】${ret.msg}`, "error");
   }
@@ -13108,7 +13302,7 @@ function initPkg_SyncJoy_Func() {
 
 // 版本号
 // 格式 yyyy.MM.dd.**
-var curVersion = "2025.05.27.01"
+var curVersion = "2025.06.03.02"
 var isNeedUpdate = false
 var lastestVersion = ""
 function initPkg_Update() {
@@ -16083,10 +16277,7 @@ function initRouter(href) {
   }
 
   // 路由转发
-  if (
-    String(href).indexOf("passport.douyu.com") !== -1 &&
-    String(href).indexOf("exid=chun") !== -1
-  ) {
+  if (String(href).indexOf("passport.douyu.com") !== -1 && String(href).indexOf("exid=chun") !== -1) {
     // 账号
     initRouter_Passport();
   } else if (String(href).indexOf("msg.douyu.com") !== -1) {
@@ -16115,6 +16306,7 @@ function initRouter(href) {
     if (String(href).indexOf("?exClean") !== -1) {
       initRouter_CleanCz();
     }
+
   } else if (String(href).indexOf("getFansBadgeList") !== -1) {
     // 粉丝牌
     initRouter_FansBadgeList();
@@ -16123,22 +16315,10 @@ function initRouter(href) {
       // 主站
       initRouter_DouyuRoom_Popup();
     } else {
-      if (
-        String(href).indexOf("template/") !== -1 ||
-        String(href).indexOf("h5/") !== -1
-      ) {
+      if (String(href).indexOf("template/") !== -1 || String(href).indexOf("h5/") !== -1) {
         return;
       }
-      if (
-        String(href).indexOf("directory/myFollow") !== -1 ||
-        String(href).indexOf("g_") !== -1
-      ) {
-        //分类页 和 我的关注
-        // initRouter_DouyuCategoryPage();
-      } else {
-        //直播间
-        initRouter_DouyuRoom_Main();
-      }
+      initRouter_DouyuRoom_Main();
     }
   }
 }
@@ -16197,7 +16377,6 @@ function initPkgSpecial() {
 // }
 
 function initRouter_Yuba() {
-  // TODO 夜间模式
   document.domain = "douyu.com";
 }
 

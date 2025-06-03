@@ -6,10 +6,7 @@ function initRouter(href) {
   }
 
   // 路由转发
-  if (
-    String(href).indexOf("passport.douyu.com") !== -1 &&
-    String(href).indexOf("exid=chun") !== -1
-  ) {
+  if (String(href).indexOf("passport.douyu.com") !== -1 && String(href).indexOf("exid=chun") !== -1) {
     // 账号
     initRouter_Passport();
   } else if (String(href).indexOf("msg.douyu.com") !== -1) {
@@ -38,6 +35,7 @@ function initRouter(href) {
     if (String(href).indexOf("?exClean") !== -1) {
       initRouter_CleanCz();
     }
+
   } else if (String(href).indexOf("getFansBadgeList") !== -1) {
     // 粉丝牌
     initRouter_FansBadgeList();
@@ -46,22 +44,10 @@ function initRouter(href) {
       // 主站
       initRouter_DouyuRoom_Popup();
     } else {
-      if (
-        String(href).indexOf("template/") !== -1 ||
-        String(href).indexOf("h5/") !== -1
-      ) {
+      if (String(href).indexOf("template/") !== -1 || String(href).indexOf("h5/") !== -1) {
         return;
       }
-      if (
-        String(href).indexOf("directory/myFollow") !== -1 ||
-        String(href).indexOf("g_") !== -1
-      ) {
-        //分类页 和 我的关注
-        // initRouter_DouyuCategoryPage();
-      } else {
-        //直播间
-        initRouter_DouyuRoom_Main();
-      }
+      initRouter_DouyuRoom_Main();
     }
   }
 }
@@ -120,7 +106,6 @@ function initPkgSpecial() {
 // }
 
 function initRouter_Yuba() {
-  // TODO 夜间模式
   document.domain = "douyu.com";
 }
 
