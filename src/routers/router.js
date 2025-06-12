@@ -84,12 +84,11 @@ function initRouter_DouyuRoom_Main() {
       return;
     }
     setTimeout(() => {
-      // initStyles();
+      initStyles();
       initPkg();
       initPkgSpecial();
-      initPkg_meta();
       initTimer();
-    }, 1500);
+    }, 1500)
     clearInterval(intID);
   }, 1000);
 }
